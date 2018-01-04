@@ -1,0 +1,404 @@
+.clearfix:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+header{
+    background: rgba(0,0,0,0.4);
+}
+
+nav{
+background:transparent ;
+    height: 50px;
+}
+
+ul{
+    margin: 0;
+}
+
+#banner{
+    background:transparent;
+    height:700px;
+}
+
+.article #banner {
+height: 200px;
+}
+
+nav ul
+{
+    list-style:none ;
+    margin:0;
+    float: right;
+}
+nav ul li, nav .logo
+{
+   display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+    font-weight: 900;
+}
+
+nav ul li a
+{
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    /*height: 50px;*/height: inherit;
+    color:#fff;
+    font-weight: 900;
+
+}
+
+/*nav li a 的高度一致 就不容易出现 其他元素改动后的移位问题*/
+nav  div.logo
+{
+float: left;
+    padding-left: 10px;
+}
+
+
+/*以上css 是逐层展开的，条理清晰*/
+/*先布局再去调颜色，阴影*/
+
+#banner .inner {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+    top:160px;
+}
+
+.article #banner .inner {
+    top:10px;
+}
+
+
+#banner .inner h1{
+    margin:0;
+}
+
+button{
+    border:none;
+    background: #333;
+    color: #eee;
+    padding:10px;
+}
+
+#banner button{
+    padding:14px 28px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    border-radius: 6px;
+    background-color: #18a;
+}
+
+#banner .inner .more
+{
+    margin-top:200px;
+    color: #fff;
+}
+
+.sub-heading{
+    line-height:30px ;
+    margin:30px 0;
+    font-size: 18px;
+    color:#fff ;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.logo a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+.title1{ border-top: 2px solid #fff; border-bottom: 2px solid #fff; padding:12px;color: #fff;font-weight: bold}
+
+.hr{
+    width: 100%;
+    height: 2px;
+    margin:20px auto;
+
+}
+
+.article h1{
+    border: none;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size:18px;
+    letter-spacing: 1px;
+}
+
+.green-section{
+    text-align: center;
+    background: #089DB0;
+    color:#fff;
+    margin:0;
+    padding:100px 0;
+}
+
+.green-section .hr{
+background: #098E9F;
+    width: 60%;
+}
+
+.green-section .icon-group .icon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: #0D6F7C solid 1px;
+    transform: rotate(45deg);
+    margin: 20px;
+
+}
+
+.icon-group{
+margin-top: 60px;
+}
+
+
+ .wrapper{
+    max-width: 1080px;
+    margin:0 auto;
+}
+
+.wrapper h2{
+    margin: 0;
+}
+
+.gray-section{
+    background: #252f34;
+    color: #fff;
+}
+
+.gray-section .img-section{
+    width: 45%;
+}
+
+.img-section img{
+    width: 100%;
+}
+
+
+.gray-section .text-section {
+width:55%;
+}
+
+.article-preview > div{
+    float: left;
+    font-size: 0;
+
+}
+
+.article-preview:nth-child(odd){
+    background-color: rgba(255,255,255,0.05);
+}
+
+.article-preview:after
+{content:'';
+    display: block;
+    clear:both;
+
+}
+
+.text-section{
+    position: relative;
+    top:68px;
+    left:50px;
+}
+
+.text-section h2{
+  margin-bottom: 20px;
+
+}
+
+.text-section .sub-heading{
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.text-section p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.text-section >*{
+    max-width: 90%;
+}
+
+.purple-section{
+    background: #3F3965;
+    color:#fff;
+    padding: 80px;
+
+}
+
+.heading-wrapper h2{
+    margin: 0;
+}
+
+.purple-section .heading-wrapper{
+    text-align: center;
+}
+
+.purple-section .hr{
+    background: #373259;
+    width:60%;
+}
+
+.card{
+    float:left;
+    width: 50%;
+    min-height:300px;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 1px solid #fff;*/
+}
+
+.card:first-child{
+    background: rgba(0,0,0,0.04);
+}
+.card:nth-child(2){
+    background: rgba(0,0,0,0.08);
+}
+.card:nth-child(3){
+    background: rgba(0,0,0,0.12);
+}
+.card:nth-child(4){
+    background: rgba(0,0,0,0.16);
+}
+.card:nth-child(5){
+    background: rgba(0,0,0,0.20);
+}
+.card:nth-child(6){
+    background: rgba(0,0,0,0.24);
+}
+
+footer{
+   min-height:200px;
+    background: #333;
+    color:#fff;
+    text-align: center;
+
+}
+
+ul.share-group{
+    display: block;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.share-group li{
+display: inline-block;
+    padding: 10px;
+}
+
+.copy{
+    padding-bottom: 20px;
+}
+
+.main-wrapper{
+    background: #4444 url("../img/banner.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center ;
+    overflow: hidden;
+}
+
+.icon-arrow{
+    padding-top: 10px;
+    color: #fff;
+}
+
+.mask{
+    display: none;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+#sidebar
+{
+    position: fixed;
+    top:0;
+    bottom:0;
+    right: -300px;
+    width: 300px;
+    background: #333;
+    color: #fff;
+    padding:20px 0;
+    transition:right 0.5s;
+}
+
+#sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding:10px 30px;
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+
+}
+
+#sidebar ul li a:hover {
+background: #444;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    cursor: pointer;
+    border: 1px solid #888;
+}
+
+.article .content{
+    background:#fefefe;
+}
+
+.content_wrapper{
+    width: 800px;
+    margin:0 auto;
+}
+
+.article_info{
+    font-size:14px;
+    color: #888;
+    Padding:15px;
+
+}
+
+article{
+    line-height: 2;
+    padding:10px 0;
+}
